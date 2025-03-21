@@ -1,10 +1,10 @@
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from data.models.auth_model import User
-from helpers.db_config import gate_pass_service
+from helpers.db_connect import gate_pass_service
 
 
-gate_pass_view = Blueprint('gate_pass', __name__)
+gate_pass_view = Blueprint('gate_pass_view', __name__)
 
 
 @gate_pass_view.route("/generate_gate_pass", methods=["POST"])

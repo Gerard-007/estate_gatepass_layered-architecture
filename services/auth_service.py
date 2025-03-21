@@ -2,8 +2,9 @@ from datetime import timedelta, datetime
 import jwt
 from flask_jwt_extended import create_access_token, create_refresh_token
 from werkzeug.security import generate_password_hash, check_password_hash
+
 from data.repositories.repository_impl import IRepository
-from helpers.db_config import Config
+from helpers.config import Config
 
 
 class AuthService:
@@ -17,7 +18,7 @@ class AuthService:
                 "fullname": data["fullname"],
                 "email": data["email"],
                 "phone": data["phone"],
-                "status": data.get("status", "Visitor"),
+                "status": data.get("status", "Resident"),
             },
             "exp": datetime.now() + timedelta(days=2),
         }
@@ -27,7 +28,7 @@ class AuthService:
 
     def verify_user(self, token: str, password: str) -> dict:
         decoded = jwt.decode(token, self.secret_key, algorithms=["HS256"])
-        if datetime.now().timestamp() > decoded.get("exp", 0):
+        if datetime.utcnow().timestamp() > decoded.get("exp", 0):
             raise ValueError("Token expired.")
         user_data = decoded["user_data"]
         if self.repository.get_user_by_email(user_data["email"]):
@@ -48,3 +49,7 @@ class AuthService:
             "access_token": create_access_token(identity=user["email"], expires_delta=timedelta(days=1)),
             "refresh_token": create_refresh_token(identity=user["email"]),
         }
+
+
+def register_user(json):
+    return None

@@ -1,15 +1,8 @@
 from mongoengine import connect
 from data.repositories.repository import MongoRepository
+from helpers.config import Config
 from services.auth_service import AuthService
 from services.gate_pass_service import GatePassService
-
-class Config:
-    JWT_SECRET_KEY = "jwt_secret_key"
-    FRONTEND_URL = "http://localhost:5000"
-    MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.tvycbjn.mongodb.net/?retryWrites=true&w=majority"
-    DB_NAME = "estate_db"
-    AUTH_COLLECTION = "users"
-    GATEPASS_COLLECTION = "gate_pass"
 
 
 def initialize_db():

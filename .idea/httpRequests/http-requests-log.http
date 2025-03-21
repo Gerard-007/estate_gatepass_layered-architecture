@@ -1,0 +1,108 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T012714.500.json
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T011931.500.json
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T005323.404.html
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T005247.404.html
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T004447.404.html
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T004447.404.html
+
+###
+

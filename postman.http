@@ -1,0 +1,14 @@
+@BASE_URL=http://localhost:5000
+@AUTH_TOKEN=Bearer
+
+
+### Register User
+POST {{BASE_URL}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
