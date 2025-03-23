@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99e69758-7e70-4d44-b8ee-512f794de53e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/helpers/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/custom_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postman.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/gate_pass_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/gate_pass_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/repositories/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/repositories/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/repositories/repository_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/repositories/repository_impl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/db_connect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/auth_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/auth_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gate_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/gate_pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/custom_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/custom_exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/db_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/db_connect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postman.http" beforeDir="false" afterPath="$PROJECT_DIR$/postman.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/gate_pass_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/gate_pass_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -46,23 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flask server.Flask (app.py).executor": "Run",
-    "Flask server.layered_achitecture_gatepass.executor": "Run",
-    "HTTP Request.postman | Register User.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "C:/Users/DELL USER/Desktop/layered_achitecture_gatepass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.layered_achitecture_gatepass.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.postman | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.postman | Generate Token....executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.postman | Login User....executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.postman | Register User.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL USER/Desktop/layered_achitecture_gatepass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DELL USER\Desktop\layered_achitecture_gatepass" />
@@ -75,7 +77,16 @@
     </key>
   </component>
   <component name="RunManager" selected="Flask server.layered_achitecture_gatepass">
+    <configuration name="postman | Generate Token..." type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/postman.http" index="4" requestIdentifier="Generate Token..." runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="postman | Login User..." type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/postman.http" index="3" requestIdentifier="Login User..." runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="postman | Register User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/postman.http" requestIdentifier="Register User" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="postman | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/postman.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
@@ -112,6 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.postman | Generate Token..." />
+        <item itemvalue="HTTP Request.postman | Login User..." />
+        <item itemvalue="HTTP Request.postman | #2" />
         <item itemvalue="HTTP Request.postman | Register User" />
         <item itemvalue="Flask server.Flask (app.py)" />
       </list>
@@ -136,7 +150,8 @@
       <workItem from="1742389212859" duration="7482000" />
       <workItem from="1742465567485" duration="967000" />
       <workItem from="1742467438259" duration="15926000" />
-      <workItem from="1742515244175" duration="1538000" />
+      <workItem from="1742515244175" duration="8919000" />
+      <workItem from="1742734117967" duration="27000" />
     </task>
     <servers />
   </component>
@@ -145,6 +160,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/layered_achitecture_gatepass$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1742515275283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/layered_achitecture_gatepass$layered_achitecture_gatepass.coverage" NAME="layered_achitecture_gatepass Coverage Results" MODIFIED="1742516853265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/layered_achitecture_gatepass$layered_achitecture_gatepass.coverage" NAME="layered_achitecture_gatepass Coverage Results" MODIFIED="1742564374464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

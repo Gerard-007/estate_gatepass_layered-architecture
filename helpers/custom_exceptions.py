@@ -1,5 +1,6 @@
 from flask import jsonify
 from app import app, jwt
+from data.models.auth_model import RevokedToken
 
 
 @app.errorhandler(400)
@@ -25,5 +26,9 @@ def internal_server_error(error):
 @jwt.token_in_blocklist_loader
 def check_if_token_revoked(jwt_header, jwt_payload):
     jti = jwt_payload["jti"]
-    revoked_token = app.config["REVOKED_TOKENS_COLLECTION"].find_one({"jti": jti})
-    return revoked_token is not None
+    try:
+        revoked_token = RevokedToken.objects(jti=jti).first()
+        return revoked_token is not None
+    except Exception as e:
+        print(f"Error checking revoked token: {e}")
+        return False

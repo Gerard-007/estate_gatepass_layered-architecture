@@ -1,8 +1,11 @@
 import jwt
 from flask import Blueprint, request, jsonify
-from flask_jwt_extended import jwt_required, unset_jwt_cookies
+from flask_jwt_extended import jwt_required, unset_jwt_cookies, get_jwt
+
+from data.models.auth_model import RevokedToken
+from helpers.db_connect import auth_service
 from helpers.utility import send_mail
-from services import auth_service
+
 
 
 auth_view = Blueprint("auth", __name__)
@@ -29,7 +32,8 @@ def register():
 def verify(token):
     try:
         data = request.json
-        tokens = auth_service.verify_user(token, data.get("password"))
+        print(f"password: {data['password']}")
+        tokens = auth_service.verify_user(token, data['password'])
         return jsonify(tokens), 200
     except (jwt.ExpiredSignatureError, jwt.InvalidTokenError):
         return jsonify({"error": "Invalid token."}), 400
@@ -52,10 +56,11 @@ def login():
 @jwt_required()
 def logout():
     try:
-        # jti = get_raw_jwt()["jti"]
-        # revoked_tokens.insert_one({"jti": jti})
+        jti = get_jwt()["jti"]
+        RevokedToken(jti=jti).save()
         response = jsonify({"message": "Successfully logged out"})
         unset_jwt_cookies(response)
         return response, 200
     except Exception as e:
+        print(f"Error: {e}")
         return jsonify({"error": "Logout failed"}), 400

@@ -28,9 +28,10 @@ class AuthService:
 
     def verify_user(self, token: str, password: str) -> dict:
         decoded = jwt.decode(token, self.secret_key, algorithms=["HS256"])
-        if datetime.utcnow().timestamp() > decoded.get("exp", 0):
+        if datetime.now().timestamp() > decoded.get("exp", 0):
             raise ValueError("Token expired.")
         user_data = decoded["user_data"]
+        print(f"user_data: {user_data}")
         if self.repository.get_user_by_email(user_data["email"]):
             raise ValueError("Email already registered.")
         hashed_password = generate_password_hash(password)

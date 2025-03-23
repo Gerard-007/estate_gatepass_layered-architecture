@@ -1,0 +1,3 @@
+{
+  "error": "Could not save document (No write concern mode named 'majority/estate_db' found in replica set configuration, full error: {'code': 79, 'codeName': 'UnknownReplWriteConcern', 'errmsg': \"No write concern mode named 'majority/estate_db' found in replica set configuration\", 'errInfo': {'writeConcern': {'w': 'majority/estate_db', 'wtimeout': 0, 'provenance': 'clientSupplied'}}})"
+}

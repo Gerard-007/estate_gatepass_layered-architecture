@@ -1,3 +1,214 @@
+POST http://localhost:5000/api/gate_pass/generate_gate_pass
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MjU2MDg2MiwianRpIjoiMDEzNWM1NTktNWYwNS00M2Q5LTgwMDYtYzhlMmNlNDc2Y2IzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJuYmYiOjE3NDI1NjA4NjIsImNzcmYiOiJiNjg4ZGM2MC00YjViLTQ2YWEtOGZkYi0yNzI3YjczYTc5ZjMiLCJleHAiOjE3NDI2NDcyNjJ9.rC79QT4tCa2cdjz5Xy5B4wus0vb640v69n2HRFRUB50
+Content-Length: 84
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "visitor_name": "Gerard",
+  "visitor_phone": "08035502188",
+  "expires_at": 90
+}
+
+<> 2025-03-21T144015.201.json
+
+###
+
+POST http://localhost:5000/api/gate_pass/generate_gate_pass
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MjU2MDg2MiwianRpIjoiMDEzNWM1NTktNWYwNS00M2Q5LTgwMDYtYzhlMmNlNDc2Y2IzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJuYmYiOjE3NDI1NjA4NjIsImNzcmYiOiJiNjg4ZGM2MC00YjViLTQ2YWEtOGZkYi0yNzI3YjczYTc5ZjMiLCJleHAiOjE3NDI2NDcyNjJ9.rC79QT4tCa2cdjz5Xy5B4wus0vb640v69n2HRFRUB50
+Content-Length: 84
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "visitor_name": "Gerard",
+  "visitor_phone": "08035502188",
+  "expires_at": 90
+}
+
+<> 2025-03-21T143624.400.json
+
+###
+
+POST http://localhost:5000/api/gate_pass/generate_gate_pass
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MjU2MDg2MiwianRpIjoiMDEzNWM1NTktNWYwNS00M2Q5LTgwMDYtYzhlMmNlNDc2Y2IzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJuYmYiOjE3NDI1NjA4NjIsImNzcmYiOiJiNjg4ZGM2MC00YjViLTQ2YWEtOGZkYi0yNzI3YjczYTc5ZjMiLCJleHAiOjE3NDI2NDcyNjJ9.rC79QT4tCa2cdjz5Xy5B4wus0vb640v69n2HRFRUB50
+Content-Length: 84
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "visitor_name": "Gerard",
+  "visitor_phone": "08035502188",
+  "expires_at": 90
+}
+
+<> 2025-03-21T141656.500.json
+
+###
+
+POST http://localhost:5000/api/gate_pass/generate_gate_pass
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MjU2MDg2MiwianRpIjoiMDEzNWM1NTktNWYwNS00M2Q5LTgwMDYtYzhlMmNlNDc2Y2IzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJuYmYiOjE3NDI1NjA4NjIsImNzcmYiOiJiNjg4ZGM2MC00YjViLTQ2YWEtOGZkYi0yNzI3YjczYTc5ZjMiLCJleHAiOjE3NDI2NDcyNjJ9.rC79QT4tCa2cdjz5Xy5B4wus0vb640v69n2HRFRUB50
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-03-21T140453.500.json
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "danchuksn@gmail.com",
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T134102.200.json
+
+###
+
+POST http://localhost:5000/api/auth/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
+Content-Type: application/json
+Content-Length: 28
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T133840.200.json
+
+###
+
+POST http://localhost:5000/api/auth/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
+Content-Type: application/json
+Content-Length: 28
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T010122.400.json
+
+###
+
+POST http://localhost:5000/api/auth/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
+Content-Type: application/json
+Content-Length: 28
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T005322.400.json
+
+###
+
+POST http://localhost:5000/api/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
+Content-Type: application/json
+Content-Length: 28
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T005239.404.json
+
+###
+
+POST http://localhost:5000/api/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
+Content-Type: application/json
+Content-Length: 28
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "password": "Pass=123"
+}
+
+<> 2025-03-21T004841.404.json
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T004225.201.json
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T003957.500.json
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "fullname": "Dan Chuks",
+  "email": "danchuksn@gmail.com",
+  "phone": "08018812324",
+  "status": "Resident"
+}
+
+<> 2025-03-21T003722.500.json
+
+###
+
 POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 Content-Length: 113

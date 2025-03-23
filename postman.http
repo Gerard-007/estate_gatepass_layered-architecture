@@ -1,5 +1,6 @@
 @BASE_URL=http://localhost:5000
-@AUTH_TOKEN=Bearer
+@AUTH_TOKEN=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MjU2MDg2MiwianRpIjoiMDEzNWM1NTktNWYwNS00M2Q5LTgwMDYtYzhlMmNlNDc2Y2IzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJuYmYiOjE3NDI1NjA4NjIsImNzcmYiOiJiNjg4ZGM2MC00YjViLTQ2YWEtOGZkYi0yNzI3YjczYTc5ZjMiLCJleHAiOjE3NDI2NDcyNjJ9.rC79QT4tCa2cdjz5Xy5B4wus0vb640v69n2HRFRUB50
+@VERIFICATION_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiZnVsbG5hbWUiOiJEYW4gQ2h1a3MiLCJlbWFpbCI6ImRhbmNodWtzbkBnbWFpbC5jb20iLCJwaG9uZSI6IjA4MDE4ODEyMzI0Iiwic3RhdHVzIjoiUmVzaWRlbnQifSwiZXhwIjoxNzQyNjkwNTQ1fQ.gh3M3zASV_fyBJ1xZlrklg86Tc7lxHL5tg0z9qXc8Sc
 
 
 ### Register User
@@ -11,4 +12,35 @@ Content-Type: application/json
   "email": "danchuksn@gmail.com",
   "phone": "08018812324",
   "status": "Resident"
+}
+
+
+### Verify user...
+POST {{BASE_URL}}/api/auth/verify/{{VERIFICATION_TOKEN}}
+Content-Type: application/json
+
+{
+  "password": "Pass=123"
+}
+
+
+### Login User...
+POST {{BASE_URL}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "danchuksn@gmail.com",
+  "password": "Pass=123"
+}
+
+
+### Generate Token...
+POST {{BASE_URL}}/api/gate_pass/generate_gate_pass
+Content-Type: application/json
+Authorization: {{AUTH_TOKEN}}
+
+{
+  "visitor_name": "Gerard",
+  "visitor_phone": "08035502188",
+  "expires_at": 90
 }

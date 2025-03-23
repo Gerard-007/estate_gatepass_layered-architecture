@@ -1,6 +1,5 @@
 from datetime import datetime
 from mongoengine import Document, StringField, BooleanField, DateTimeField, ReferenceField
-
 from data.models.auth_model import User
 
 
@@ -13,4 +12,4 @@ class VisitorToken(Document):
     is_active = BooleanField(default=True)
     purpose = StringField(choices=["entry", "exit"], default="entry")
     created_at = DateTimeField(default=datetime.now())
-    meta = {"collection": "gate_pass"}
+    meta = {"collection": "visitor_tokens", "db_alias": "default"}

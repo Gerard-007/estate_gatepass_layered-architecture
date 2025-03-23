@@ -11,4 +11,12 @@ class User(Document):
     password = StringField(required=False)
     is_active = BooleanField(default=False)
     created_at = DateTimeField(default=datetime.now())
-    meta = {"collection": "users"}
+    meta = {"collection": "users", "db_alias": "default"}
+
+
+class RevokedToken(Document):
+    jti = StringField(required=True, unique=True)
+    meta = {
+        "collection": "revoked_tokens",
+        "indexes": ["jti"]
+    }
